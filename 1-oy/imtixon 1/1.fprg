@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shohruh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-11 08:49:08 AM"/>
+        <attribute name="created" value="U2hvaHJ1aDtERVNLVE9QLUdCVklGMEY7MjAyNC0wNS0xMTswODozOTo0OCBBTTszMDgw"/>
+        <attribute name="edited" value="U2hvaHJ1aDtERVNLVE9QLUdCVklGMEY7MjAyNC0wNS0xMTswODo0OTowOCBBTTsxOzMxODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, i, soni" type="Integer" array="False" size=""/>
+            <output expression="&quot;Son kiriting:&quot;" newline="True"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="soni" expression="0"/>
+            <while expression="i&lt;2">
+                <if expression="A%2==0">
+                    <then>
+                        <assign variable="soni" expression="soni+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="B%2==0">
+                    <then>
+                        <assign variable="soni" expression="soni+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="C%2==0">
+                    <then>
+                        <assign variable="soni" expression="soni+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;Kiritilgan 'A,B,C' sonlardagi juft sonlar soni:&quot; &amp;soni" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

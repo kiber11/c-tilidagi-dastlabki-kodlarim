@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shohruh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-11 09:22:56 AM"/>
+        <attribute name="created" value="U2hvaHJ1aDtERVNLVE9QLUdCVklGMEY7MjAyNC0wNS0xMTswODo0OToxMCBBTTszMDcw"/>
+        <attribute name="edited" value="U2hvaHJ1aDtERVNLVE9QLUdCVklGMEY7MjAyNC0wNS0xMTswOToyMjo1NiBBTTsxOzMxODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, min, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Son kiriting:&quot;" newline="True"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="min" expression="0"/>
+            <while expression="i&lt;2">
+                <if expression="A&lt;B">
+                    <then>
+                        <if expression="A&lt;C">
+                            <then>
+                                <if expression="B&lt;C">
+                                    <then>
+                                        <output expression="A" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="B==C">
+                                            <then>
+                                                <output expression="A" newline="True"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="A==C">
+                                    <then>
+                                        <output expression="&quot;Kichigi A va C&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="C" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="A==B">
+                            <then>
+                                <if expression="A==C">
+                                    <then>
+                                        <output expression="&quot;Uchala son teng&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="A&lt;C">
+                                            <then>
+                                                <output expression="&quot;Kichigi A va B&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="A==C">
+                                                    <then>
+                                                        <output expression="&quot;A,B,C o'zaro teng&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="C&lt;A">
+                                                            <then>
+                                                                <output expression="C" newline="True"/>
+                                                            </then>
+                                                            <else/>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="A&lt;C">
+                                    <then>
+                                        <if expression="B&lt;C">
+                                            <then>
+                                                <output expression="B" newline="True"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <if expression="A==C">
+                                            <then>
+                                                <output expression="B" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="B==C">
+                                                    <then>
+                                                        <output expression="&quot;Kichigi B va C&quot;" newline="True"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
