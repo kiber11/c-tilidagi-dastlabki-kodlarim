@@ -5,18 +5,22 @@ void baholarniTahlilQilish(int **baholar, int talabalarSoni, int fanlarSoni) {
 
     int sanash[fanlarSoni][6];
 
-
+printf("\n");
     for (int i = 0; i < fanlarSoni; i++) {
         for (int j = 2; j <= 5; j++) {
             sanash[i][j] = 0;
+            printf("% d ",sanash[i][j]);
         }
+        printf("\n");
     }
 
 
     for (int j = 0; j < fanlarSoni; j++) {
         for (int i = 0; i < talabalarSoni; i++) {
             sanash[j][baholar[i][j]]++;
+            printf("% d ", sanash[j][baholar[i][j]]);
         }
+        printf("\n");
     }
 
 
@@ -46,7 +50,9 @@ int main() {
     for (int i = 0; i < talabalarSoni; i++) {
         for (int j = 0; j < fanlarSoni; j++) {
             baholar[i][j] = malumot[i][j];
+            printf(" %d ",baholar[i][j]);
         }
+        printf("\n");
     }
 
 
